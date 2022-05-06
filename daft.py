@@ -15,7 +15,7 @@ def send_message(chat_id, message):
         print("Erro no sendMessage:", e)
 
 def find_daft():
-    url = "https://www.daft.ie/sharing/ireland?rentalPrice_from=200&rentalPrice_to=650&firstPublishDate_from=now-1d%2Fd&suitableFor=male&location=dublin-city&location=dublin"
+    url = "https://www.daft.ie/sharing/ireland?rentalPrice_from=200&rentalPrice_to=650&firstPublishDate_from=now-1d%2Fd&suitableFor=male&location=dublin-city&location=dublin&location=bray-wicklow"
     r = session.get(url)
     search_result = r.html.xpath('//ul[@data-testid="results"]/li/a/@href')
 
